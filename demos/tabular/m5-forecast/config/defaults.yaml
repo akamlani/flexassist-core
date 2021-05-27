@@ -1,0 +1,7 @@
+project: 
+  name:         'm5-forecast'    # name of the project sending the run to (else placed in 'Uncategorized' project)
+  entity:       'akamlani'       # entity qualifier (username or team name sending runs to), must be created beforehand
+  description:  'marketing sales foreasting walmart ecommerce W&B Demo'
+  tags:    
+    - demo 
+  

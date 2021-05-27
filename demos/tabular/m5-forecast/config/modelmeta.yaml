@@ -1,0 +1,9 @@
+architecture:
+  start_period:           350           # start period, as many sales have 0 values
+  lookback_period:        1591          # len(df_train_daily_qty) - start_day
+  time_steps:             14
+  output_width:           7             # for one week prior
+  num_outputs:            25            # equivalent to num_features for output
+  horizon:                28            # how many steps to predict into the future
+  model_type:             'regressor'   # regression, classification, ranking 
+

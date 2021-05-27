@@ -1,0 +1,17 @@
+training_parameters:
+  # loss associated with training configuration
+  loss:                 'mean_squared_error'    
+  # metrics to monitor  (e.g. for regression)
+  metrics: 
+    - 'MeanAbsoluteError'             
+    - 'MeanSquaredError'             
+    - 'RootMeanSquaredError'   
+    #- 'MeanAbsolutePercentageError'           
+
+  batch_size:           32
+  num_epochs:           30       
+  patience:             5         # for early stopping
+  learning_rate:        1e-3      # 5e-4
+  momentum:             0.99
+  verbosity:            2
+

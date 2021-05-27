@@ -1,0 +1,21 @@
+# for experiment local directory structure
+paths:
+  # define root path
+  root_dir:             &root_dir           "experiments/snapshots" 
+  # experiment snapshot: Define top level name of experiemnt
+  experiment_dir:       &experiment_dir     [*root_dir,         "m5-fcst-base"]       # experiments/snapshots/{experiment_name}
+  export_dir:           &export_dir         [*experiment_dir,   "exports"]            # experiments/snapshots/{experiment_name}/exports
+  log_dir:              &log_dir            [*experiment_dir,   "logs"]               # experiments/snapshots/{experiment_name}/logs
+
+  # logs 
+  log_core_dir:         &log_core_dir       [*log_dir,      "core"]                   # logs/core
+  tensorboard_dir:      &log_tb_dir         [*log_dir,      "tensorboard"]            # logs/tensorboard
+  # reporting 
+  figures_dir:          &figures_dir        [*export_dir,   "figures"]                # exports/figures
+  reports_dir:          &reports_dir        [*export_dir,   "reports"]                # exports/reports
+  # model specific
+  artifact_dir:         &artifact_dir       [*export_dir,   "artifacts"]              # exports/artifacts
+  datasets_dir:         &dataset_dir        [*artifact_dir, "datasets"]               # exports/artifacts/datasets
+  model_dir:            &model_dir          [*artifact_dir, "models"]                 # exports/artifacts/models
+  checkpoint_dir:       &ckpt_dir           [*model_dir,    "ckpts"]                  # exports/artifacts/ckpts
+  # data artifacts 

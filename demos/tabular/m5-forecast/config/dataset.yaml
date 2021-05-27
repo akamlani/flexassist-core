@@ -1,0 +1,10 @@
+dataset: 
+  id:           'm5-forecast-walmart::uncertainty'
+  path:         'data'
+  description:  'M5 walmart sales forecasting competition'
+  uri:          'https://www.kaggle.com/c/m5-forecasting-uncertainty'
+  tags: 
+    - timeseries
+    - forecasting  
+    
+  
